@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />   <title>CobaCoding Pertama byRadit</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/">HOME</a>
+            <a onclick="darkMode()">MODE</a>
+        </nav>
+        <h1>CobaCoding Pertama byRadit</h1>
+    </div>
+
+
+    <!-- initializing function script -->
+    <script>
+        let body = document.body;
+
+        const darkLimit = 5;
+        let darkCounter = 0;
+        let darkRemainingLeft;
+
+        function darkMode() {
+
+            if(darkRemainingleft == 0){
+            console.log('jatah dark mode anda habis')
+            return;
+            }
+
+                darkCounter += 1;
+                let darkRemainingLeft= darkLimit - darkMode;
+                
+                console.log('dark mode di klik sebanyak: ', darkCounter);
+                console.log('kesempatan anda: ', darkRemainingLeft);
+                body.classList.toggle("dark");
+            }    
+        </script>
+</body>
+</html>
